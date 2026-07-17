@@ -1,7 +1,8 @@
 args_temp<-commandArgs(TRUE)
 ci_indicator = as.numeric(args_temp[[1]])
 st = args_temp[[2]]
-save_name = paste0(strsplit(st,'/')[[1]][2],'_fixed.list')
+# `st` is the bare setting name (e.g. "additive_ci") passed by combine_jobs.sh.
+save_name = paste0(st,'_fixed.list')
 #1 will trigger `CI COMBINE RESULTS'
 #0 will trigger 'EST COMBINE RESULTS'
 
@@ -16,9 +17,9 @@ if(!ci_indicator){
     times_counterfactual = 500
 
     for(j in 1:length(args)){
-        setwd(paste0('~/spillover_balance/',args[j]))
-        
-    
+        setwd(paste0('~/',args[j]))
+
+
         #first get the counterfactual
     
         counterfactual = 0
@@ -109,7 +110,7 @@ if(!ci_indicator){
         summary = list(bias.bal, sd.bal, bias.ipw.bal, sd.ipw.bal, bias.ipw, sd.ipw, n.bal, counterfactual, bias.ME, sd.ME)
         names(summary) = c('bias.bal', 'sd.bal', 'bias.ipw.bal', 'sd.ipw.bal', 'bias.ipw', 'sd.ipw', 'n.bal', 'counterfactual', 'bias.ME', 'sd.ME')
         #saveRDS(summary, 'summary.list')
-        setwd('~/spillover_balance/output_files')
+        setwd('~/output_files')
         saveRDS(list(summary, ll_bias), paste0(save_name))
         toc = Sys.time()
         print(toc - tic)
@@ -120,7 +121,7 @@ if(!ci_indicator){
     times_sum_count = 1000
 
 for(j in 1:length(args)){
-    setwd(paste0('~/spillover_balance/',args[j]))
+    setwd(paste0('~/',args[j]))
     #setwd('~/spillover_balance/var_est/fixed/additive/well_specified')
     #setwd('~/spillover_balance/var_est/fixed/graph/graph3_3')
     
@@ -293,7 +294,7 @@ for(j in 1:length(args)){
 
 
     #saveRDS(summary, 'summary.list')
-    setwd('~/spillover_balance/output_files')
+    setwd('~/output_files')
     saveRDS(list(summary,ll_length), paste0(save_name))
 }
     

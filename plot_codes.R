@@ -685,19 +685,19 @@ lopsided_vary = c(0.20, 1.65, 3.10, 4.55, 6.00)
 snr_vary = c(0.2, 0.5, 1, 2, 5)
 
 # main paper
-p1 = plot_sd('~/spillover_balance/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_adapt_fixed.list', main_paper = TRUE, silent_x = TRUE)
-p2 = plot_sd('~/spillover_balance/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_snr_adapt_fixed.list', main_paper = TRUE, silent_x = TRUE, silent_y = TRUE)
-p3 = plot_sd('~/spillover_balance/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_lopsided_adapt_fixed.list', main_paper = TRUE, silent_x = TRUE, silent_y = TRUE)
+p1 = plot_sd('~/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/output_files/graph_ci_adapt_fixed.list', main_paper = TRUE, silent_x = TRUE)
+p2 = plot_sd('~/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/output_files/graph_ci_snr_adapt_fixed.list', main_paper = TRUE, silent_x = TRUE, silent_y = TRUE)
+p3 = plot_sd('~/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/output_files/graph_ci_lopsided_adapt_fixed.list', main_paper = TRUE, silent_x = TRUE, silent_y = TRUE)
 
-p4 = plot_coverage('~/spillover_balance/output_files/graph_ci_fixed.list', n = n_vary_ci, xname ="Number of clusters",se_mult = 2,  ylim = c(0,1),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_adapt_fixed.list', coverage = 0.95, main_paper = TRUE, silent_x = TRUE)
-p5 = plot_coverage('~/spillover_balance/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_snr_adapt_fixed.list', coverage = 0.95, main_paper = TRUE, silent_x = TRUE, silent_y = TRUE)
-p6 = plot_coverage('~/spillover_balance/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_lopsided_adapt_fixed.list', coverage = 0.95, main_paper = TRUE, silent_x = TRUE, silent_y = TRUE)
+p4 = plot_coverage('~/output_files/graph_ci_fixed.list', n = n_vary_ci, xname ="Number of clusters",se_mult = 2,  ylim = c(0,1),  mult = 0.01, string_adapt = '~/output_files/graph_ci_adapt_fixed.list', coverage = 0.95, main_paper = TRUE, silent_x = TRUE)
+p5 = plot_coverage('~/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = '~/output_files/graph_ci_snr_adapt_fixed.list', coverage = 0.95, main_paper = TRUE, silent_x = TRUE, silent_y = TRUE)
+p6 = plot_coverage('~/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = '~/output_files/graph_ci_lopsided_adapt_fixed.list', coverage = 0.95, main_paper = TRUE, silent_x = TRUE, silent_y = TRUE)
 
-p7 = plot_length('~/spillover_balance/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_adapt_fixed.list', main_paper = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
-p8 = plot_length('~/spillover_balance/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_snr_adapt_fixed.list',  main_paper = TRUE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
-p9 = plot_length('~/spillover_balance/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_lopsided_adapt_fixed.list', main_paper = TRUE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p7 = plot_length('~/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/output_files/graph_ci_adapt_fixed.list', main_paper = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p8 = plot_length('~/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/output_files/graph_ci_snr_adapt_fixed.list',  main_paper = TRUE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p9 = plot_length('~/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/output_files/graph_ci_lopsided_adapt_fixed.list', main_paper = TRUE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
 
-p0 = plot_sd('~/spillover_balance/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.06),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_adapt_fixed.list', main_paper = TRUE, silent_x = TRUE, silent_legend = FALSE)
+p0 = plot_sd('~/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.06),  mult = 0.01, string_adapt = '~/output_files/graph_ci_adapt_fixed.list', main_paper = TRUE, silent_x = TRUE, silent_legend = FALSE)
 
 library(patchwork)
 library(cowplot)
@@ -710,23 +710,23 @@ final_plot <- plot_grid(
   ncol = 1,
   rel_heights = c(1, 0.1)
 )
-ggsave('~/spillover_balance/Figures/main_paper.pdf',plot = final_plot,width=6.5,height=6)
+ggsave('~/Figures/main_paper.pdf',plot = final_plot,width=6.5,height=6)
 
 
 # stratified CI total
-p1 = plot_sd('~/spillover_balance/output_files/stratified_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.25),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE)
-p2 = plot_sd('~/spillover_balance/output_files/stratified_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,0.25),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
-p3 = plot_sd('~/spillover_balance/output_files/stratified_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,0.25),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p1 = plot_sd('~/output_files/stratified_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.25),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE)
+p2 = plot_sd('~/output_files/stratified_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,0.25),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p3 = plot_sd('~/output_files/stratified_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,0.25),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
 
-p4 = plot_coverage('~/spillover_balance/output_files/stratified_ci_fixed.list', n = n_vary_ci, xname ="Number of clusters",se_mult = 2,  ylim = c(0,1),  mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE)
-p5 = plot_coverage('~/spillover_balance/output_files/stratified_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
-p6 = plot_coverage('~/spillover_balance/output_files/stratified_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p4 = plot_coverage('~/output_files/stratified_ci_fixed.list', n = n_vary_ci, xname ="Number of clusters",se_mult = 2,  ylim = c(0,1),  mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE)
+p5 = plot_coverage('~/output_files/stratified_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p6 = plot_coverage('~/output_files/stratified_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
 
-p7 = plot_length('~/spillover_balance/output_files/stratified_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
-p8 = plot_length('~/spillover_balance/output_files/stratified_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL,  main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
-p9 = plot_length('~/spillover_balance/output_files/stratified_ci_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p7 = plot_length('~/output_files/stratified_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p8 = plot_length('~/output_files/stratified_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL,  main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p9 = plot_length('~/output_files/stratified_ci_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
 
-p0 = plot_sd('~/spillover_balance/output_files/stratified_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.06),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_legend = FALSE)
+p0 = plot_sd('~/output_files/stratified_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.06),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_legend = FALSE)
 
 library(patchwork)
 library(cowplot)
@@ -739,29 +739,29 @@ final_plot <- plot_grid(
   ncol = 1,
   rel_heights = c(1, 0.1)
 )
-ggsave('~/spillover_balance/Figures/ci_stratified.pdf',plot = final_plot, width=6.5,height=6)
+ggsave('~/Figures/ci_stratified.pdf',plot = final_plot, width=6.5,height=6)
 
 
 # graph CI total
-p1 = plot_sd('~/spillover_balance/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_adapt_fixed.list', main_paper = FALSE, silent_x = TRUE)
-p2 = plot_sd('~/spillover_balance/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_snr_adapt_fixed.list', main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
-p3 = plot_sd('~/spillover_balance/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_lopsided_adapt_fixed.list', main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p1 = plot_sd('~/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/output_files/graph_ci_adapt_fixed.list', main_paper = FALSE, silent_x = TRUE)
+p2 = plot_sd('~/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/output_files/graph_ci_snr_adapt_fixed.list', main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p3 = plot_sd('~/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,0.32),  mult = 0.01, string_adapt = '~/output_files/graph_ci_lopsided_adapt_fixed.list', main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
 
-p4 = plot_coverage('~/spillover_balance/output_files/graph_ci_fixed.list', n = n_vary_ci, xname ="Number of clusters",se_mult = 2,  ylim = c(0,1),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_adapt_fixed.list', coverage = 0.95, main_paper = FALSE, silent_x = TRUE)
-p5 = plot_coverage('~/spillover_balance/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_snr_adapt_fixed.list', coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
-p6 = plot_coverage('~/spillover_balance/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_lopsided_adapt_fixed.list', coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p4 = plot_coverage('~/output_files/graph_ci_fixed.list', n = n_vary_ci, xname ="Number of clusters",se_mult = 2,  ylim = c(0,1),  mult = 0.01, string_adapt = '~/output_files/graph_ci_adapt_fixed.list', coverage = 0.95, main_paper = FALSE, silent_x = TRUE)
+p5 = plot_coverage('~/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = '~/output_files/graph_ci_snr_adapt_fixed.list', coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p6 = plot_coverage('~/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = '~/output_files/graph_ci_lopsided_adapt_fixed.list', coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
 
-p7 = plot_length('~/spillover_balance/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_adapt_fixed.list', main_paper = FALSE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
-p8 = plot_length('~/spillover_balance/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_snr_adapt_fixed.list',  main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
-p9 = plot_length('~/spillover_balance/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/spillover_balance/output_files/graph_ci_lopsided_adapt_fixed.list', main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p7 = plot_length('~/output_files/graph_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/output_files/graph_ci_adapt_fixed.list', main_paper = FALSE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p8 = plot_length('~/output_files/graph_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/output_files/graph_ci_snr_adapt_fixed.list',  main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p9 = plot_length('~/output_files/graph_ci_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = c(-4,1),  mult = 0.01, string_adapt = '~/output_files/graph_ci_lopsided_adapt_fixed.list', main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
 
 p0 = plot_sd(
-  '~/spillover_balance/output_files/graph_ci_fixed.list',
+  '~/output_files/graph_ci_fixed.list',
   n = n_vary_ci,
   xname = "Number of clusters",
   ylim = c(0,0.06),
   mult = 0.01,
-  string_adapt = '~/spillover_balance/output_files/graph_ci_adapt_fixed.list',
+  string_adapt = '~/output_files/graph_ci_adapt_fixed.list',
   main_paper = FALSE,
   silent_x = TRUE,
   silent_legend = FALSE,
@@ -779,23 +779,23 @@ final_plot <- plot_grid(
   ncol = 1,
   rel_heights = c(1, 0.1)
 )
-ggsave('~/spillover_balance/Figures/ci_graph.pdf',plot = final_plot,width=6.5,height=6)
+ggsave('~/Figures/ci_graph.pdf',plot = final_plot,width=6.5,height=6)
 
 
 # additive CI total
-p1 = plot_sd('~/spillover_balance/output_files/additive_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.2),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE)
-p2 = plot_sd('~/spillover_balance/output_files/additive_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,0.2),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
-p3 = plot_sd('~/spillover_balance/output_files/additive_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,0.2),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p1 = plot_sd('~/output_files/additive_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.2),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE)
+p2 = plot_sd('~/output_files/additive_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,0.2),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p3 = plot_sd('~/output_files/additive_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,0.2),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
 
-p4 = plot_coverage('~/spillover_balance/output_files/additive_ci_fixed.list', n = n_vary_ci, xname ="Number of clusters",se_mult = 2,  ylim = c(0,1),  mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE)
-p5 = plot_coverage('~/spillover_balance/output_files/additive_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
-p6 = plot_coverage('~/spillover_balance/output_files/additive_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p4 = plot_coverage('~/output_files/additive_ci_fixed.list', n = n_vary_ci, xname ="Number of clusters",se_mult = 2,  ylim = c(0,1),  mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE)
+p5 = plot_coverage('~/output_files/additive_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
+p6 = plot_coverage('~/output_files/additive_ci_lopsided_fixed.list', n = lopsided_vary, xname =  "Counterfactual deviation",  ylim = c(0,1), se_mult = 2, mult = 0.01, string_adapt = NULL, coverage = 0.95, main_paper = FALSE, silent_x = TRUE, silent_y = TRUE)
 
-p7 = plot_length('~/spillover_balance/output_files/additive_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
-p8 = plot_length('~/spillover_balance/output_files/additive_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL,  main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
-p9 = plot_length('~/spillover_balance/output_files/additive_ci_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p7 = plot_length('~/output_files/additive_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p8 = plot_length('~/output_files/additive_ci_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL,  main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
+p9 = plot_length('~/output_files/additive_ci_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = c(-4,1),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_y = TRUE, log_scale = TRUE, y_on_log = TRUE, y_tick_points = c(0.01, 0.05, 0.25, 0.5, 1, 2.5))
 
-p0 = plot_sd('~/spillover_balance/output_files/additive_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.06),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_legend = FALSE)
+p0 = plot_sd('~/output_files/additive_ci_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = c(0,0.06),  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_x = TRUE, silent_legend = FALSE)
 
 library(patchwork)
 library(cowplot)
@@ -808,13 +808,13 @@ final_plot <- plot_grid(
   ncol = 1,
   rel_heights = c(1, 0.1)
 )
-ggsave('~/spillover_balance/Figures/ci_additive.pdf',plot = final_plot,width=6.5,height=6)
+ggsave('~/Figures/ci_additive.pdf',plot = final_plot,width=6.5,height=6)
 # stratified bias
-p1 = plot_bias('~/spillover_balance/output_files/stratified_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
-p2 = plot_bias('~/spillover_balance/output_files/stratified_est_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = NULL,  mult = 0.01, string_adapt = NULL,  main_paper = FALSE)
-p3 = plot_bias('~/spillover_balance/output_files/stratified_est_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
+p1 = plot_bias('~/output_files/stratified_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
+p2 = plot_bias('~/output_files/stratified_est_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = NULL,  mult = 0.01, string_adapt = NULL,  main_paper = FALSE)
+p3 = plot_bias('~/output_files/stratified_est_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
 
-p0 = plot_bias('~/spillover_balance/output_files/stratified_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_legend = FALSE)
+p0 = plot_bias('~/output_files/stratified_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_legend = FALSE)
 library(patchwork)
 library(cowplot)
 plots <- list(p1, p2, p3)
@@ -826,15 +826,15 @@ final_plot <- plot_grid(
   ncol = 1,
   rel_heights = c(1, 0.1)
 )
-ggsave('~/spillover_balance/Figures/bias_stratified.pdf',plot =final_plot,width=6.5,height=6)
+ggsave('~/Figures/bias_stratified.pdf',plot =final_plot,width=6.5,height=6)
 
 
 # graph bias
-p1 = plot_bias('~/spillover_balance/output_files/graph_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
-p2 = plot_bias('~/spillover_balance/output_files/graph_est_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = NULL,  mult = 0.01, string_adapt = NULL,  main_paper = FALSE)
-p3 = plot_bias('~/spillover_balance/output_files/graph_est_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
+p1 = plot_bias('~/output_files/graph_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
+p2 = plot_bias('~/output_files/graph_est_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = NULL,  mult = 0.01, string_adapt = NULL,  main_paper = FALSE)
+p3 = plot_bias('~/output_files/graph_est_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
 
-p0 = plot_bias('~/spillover_balance/output_files/stratified_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_legend = FALSE)
+p0 = plot_bias('~/output_files/stratified_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_legend = FALSE)
 library(patchwork)
 library(cowplot)
 plots <- list(p1, p2, p3)
@@ -846,15 +846,15 @@ final_plot <- plot_grid(
   ncol = 1,
   rel_heights = c(1, 0.1)
 )
-ggsave('~/spillover_balance/Figures/bias_graph.pdf',plot = final_plot,width=6.5,height=6)
+ggsave('~/Figures/bias_graph.pdf',plot = final_plot,width=6.5,height=6)
 
 
 # additive bias
-p1 = plot_bias('~/spillover_balance/output_files/additive_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
-p2 = plot_bias('~/spillover_balance/output_files/additive_est_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = NULL,  mult = 0.01, string_adapt = NULL,  main_paper = FALSE)
-p3 = plot_bias('~/spillover_balance/output_files/additive_est_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
+p1 = plot_bias('~/output_files/additive_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
+p2 = plot_bias('~/output_files/additive_est_snr_fixed.list', n = snr_vary, xname = 'Signal-to-noise ratio',  ylim = NULL,  mult = 0.01, string_adapt = NULL,  main_paper = FALSE)
+p3 = plot_bias('~/output_files/additive_est_lopsided_fixed.list', n = lopsided_vary, xname = "Counterfactual deviation",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE)
 
-p0 = plot_bias('~/spillover_balance/output_files/stratified_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_legend = FALSE)
+p0 = plot_bias('~/output_files/stratified_est_fixed.list', n = n_vary_ci, xname = "Number of clusters",  ylim = NULL,  mult = 0.01, string_adapt = NULL, main_paper = FALSE, silent_legend = FALSE)
 library(patchwork)
 library(cowplot)
 plots <- list(p1, p2, p3)
@@ -866,5 +866,5 @@ final_plot <- plot_grid(
   ncol = 1,
   rel_heights = c(1, 0.1)
 )
-ggsave('~/spillover_balance/Figures/bias_additive.pdf',plot = final_plot,width=6.5,height=6)
+ggsave('~/Figures/bias_additive.pdf',plot = final_plot,width=6.5,height=6)
 

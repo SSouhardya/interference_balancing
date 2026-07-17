@@ -81,8 +81,11 @@ for setting in "${SETTINGS[@]}"; do
         continue
     fi
 
-    echo "[run]     Rscript $COMBINE_SCRIPT $flag $folder"
-    if Rscript "$COMBINE_SCRIPT" "$flag" "$folder"; then
+    # Pass the bare setting name (not the full path): combine_results_general.R
+    # resolves it relative to the home directory (~/<setting>) and uses it to
+    # build the output file name (<setting>_fixed.list).
+    echo "[run]     Rscript $COMBINE_SCRIPT $flag $setting"
+    if Rscript "$COMBINE_SCRIPT" "$flag" "$setting"; then
         echo "[ok]      $setting combined (flag=$flag)"
     else
         echo "$setting" >> "$PENDING_FILE"

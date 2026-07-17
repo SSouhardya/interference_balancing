@@ -7,4 +7,4 @@
 #SBATCH --mem 10000 # Memory request - 1000 corresponds to 1GB
 #SBATCH -o out_%a.out # Standard output
 #SBATCH -e err_%a.err # Standard error
-Rscript run_experiments.R $1 $2 $3 $4
+Rscript ~/run_experiments.R $1 $2 $3 $4

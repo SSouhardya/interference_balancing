@@ -28,7 +28,7 @@ require(quadprog)
 require(binaryLogic)
 library(corpcor)
 
-source('~/spillover_balance/source.R')
+source('~/source.R')
 
 # ---- Parameters common to every setting ------------------------------------
 rho_range <- NULL         
@@ -106,4 +106,4 @@ k_range      <- rep(list(k_pair), par_number)
 p_cov_range  <- rep(p_cov, par_number)         
 
 # ---- Run -------------------------------------------------------------------
-source('~/spillover_balance/execute.R')
+source('~/execute.R')
