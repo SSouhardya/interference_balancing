@@ -1,4 +1,4 @@
-# interference_balancing
+# Low-rank Covariate Balancing Estimators under Interference
 A repository for replicating the simulations of "Low-rank Covariate Balancing Estimators under Interference"
 
 To replicate the simulation results, follow these steps:
