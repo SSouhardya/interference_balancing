@@ -17,6 +17,6 @@ To replicate the simulation results, follow these steps:
       eprint={2512.13944},
       archivePrefix={arXiv},
       primaryClass={stat.ME},
-      url={https://arxiv.org/abs/2512.13944}, 
+      url={https://arxiv.org/abs/2512.13944}
 }
 ```
